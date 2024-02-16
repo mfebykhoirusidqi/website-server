@@ -87,7 +87,7 @@ const fileFilter = (req, file, cb) => {
 };
 const startServer = () => {
     const konek = new App().app;
-    konek.listen(process.env.DB_PORT, () => {
-        console.log(`http:localhost:${process.env.DB_PORT}`);
-    });
+    konek.listen(3001, () => {
+  console.log(`http://localhost:3001`);
+});
 };
